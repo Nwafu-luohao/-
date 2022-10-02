@@ -1,0 +1,54 @@
+<view class="view1" style=" border: 10rpx solid rgb(180, 255, 180);">
+  <view class="view2"  style="display: flex; align-items: center;">
+    <view class="view3" >
+      <view class="zhuangtai" style="font-size: 1.5em; font-weight: 900; color: honeydew; margin-left: 40rpx;">预约状态：</view>
+    </view>
+    <view class="view4">
+      <image src="/images/chenggong.png" class="image"></image>
+    </view>
+    <view class="view4">
+      <view class="view6" style="color: rgb(0, 211, 0); margin-left: 25rpx;">已预约</view>
+    </view>
+  </view>
+</view>
+
+<view class="q_time">新的开始时间：</view>
+<view class="q_time-1">
+  <view class="section">
+    <picker mode="date" value="{{date}}" start="2022-01-01" end="2035-01-01" bindchange="bindDateChange">
+      <view class="picker">
+        选择日期: {{date}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <picker mode="time" value="{{time}}" start="05:01" end="23:59" bindchange="bindTimeChange">
+      <view class="picker">
+        选择时间: {{time}}
+      </view>
+    </picker>
+  </view>
+</view>
+
+
+<view class="q_time">新的结束时间：</view>
+<view class="z_time-1">
+  <view class="section">
+    <picker mode="date" value="{{date1}}" start="2022-01-01" end="2035-01-01" bindchange="bindDateChange1">
+      <view class="picker">
+        选择日期: {{date1}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <picker mode="time" value="{{time1}}" start="05:01" end="23:59" bindchange="bindTimeChange1">
+      <view class="picker">
+        选择时间: {{time1}}
+      </view>
+    </picker>
+  </view>
+  
+</view>
+<button type="primary" class="button1" bindtap="wancheng">保存修改</button>

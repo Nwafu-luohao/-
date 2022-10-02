@@ -1,0 +1,80 @@
+{
+  "usingComponents": {
+    "van-button":"@vant/weapp/button/index"
+  },
+    "pages": [
+        "pages/me/me",
+        "pages/shenghe/shenghe",
+
+
+        "pages2/biaoge/biaoge",
+        "pages/jindutiao/jindutiao",
+        "pages/home/home",
+        "pages/message/message",
+        "pages/contact/contact",
+        "pages/meeting/meeting",
+        "pages/meeting-1/meeting-1",
+        "pages/meeting-2/meeting-2",
+        "pages/meeting-3/meeting-3",
+
+        "pages/wodeyuyue/wodeyuyue",
+  
+
+        "pages/gerenxinxi/gerenxinxi",
+        "pages/gerenxinxi-1/gerenxinxi-1",
+
+        
+        "pages/login/login",
+        "pages/index/index",
+
+
+        
+        "pages2/meeting-1/meeting-1",
+        "pages2/wodeshoucang/wodeshoucang",
+        "pages2/lianxiguanliyuan/lianxiguanliyuan",
+        "pages2/tousujianyi/tousujianyi",
+        "pages2/yonghushenghe/yonghushenghe",
+        "pages2/yonghuguanli/yonghuguanli",
+        "pages2/yonghuguanli-1/yonghuguanli-1",
+        "pages2/huiyishiguanli/huiyishiguanli",
+        "pages2/huiyishiguanli-1/huiyishiguanli-1",
+        "pages2/huiyishiguanli-2/huiyishiguanli-2",
+        "pages2/chakantousu/chakantousu",
+        "pages2/huiyitianqi/huiyitianqi",
+
+        "pages/tianqi/tianqi",
+        "pages/yubao/yubao"
+    ],
+    "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+        }
+      },
+      "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#333333",
+        "navigationBarTitleText": "会议室预约系统",
+        "navigationBarTextStyle":"white"
+      },
+      "tabBar": {
+        "color":"#0066FF",
+        "selectedColor":"#FF6666",
+        "backgroundColor": "#333333",
+        "list": [
+          {
+          "pagePath": "pages/home/home",
+          "text": "预约会议",
+          "iconPath": "/images/yuyue-1.png",
+          "selectedIconPath": "/images/yuyue-2.png"
+        }
+        ,
+        {
+          "pagePath": "pages/contact/contact",
+          "text": "我的",
+          "iconPath": "/images/wode-1.png",
+          "selectedIconPath": "/images/wode-2.png"
+        }]
+      },
+      "style": "v2",
+      "sitemapLocation": "sitemap.json"
+    }

@@ -1,0 +1,29 @@
+<view class='top'>
+  <view wx:for="{{weekList}}" class='top-text' >
+  <view wx:if="{{index != 0}}" style="font-size: small; margin-left: 10rpx;">{{item}}</view>
+  <view wx:else style="margin-left: 10rpx;">{{item}}</view>
+  </view>
+</view>
+<scroll-view scroll-y="true" class="scroll" bindtap="toYueyue">
+  <view style="height:1960rpx;width:730rpx;display:flex;">
+    <view style='background-color:#636363;color:#ffffff;' >
+      <view wx:for="{{['6:00','7:00','8:00','9:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00','0:00']}}" class='left'>{{item}}</view>
+    </view>
+
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]}}">
+      <view style="width:750rpx;margin-top:{{(index+1)*100+index}}rpx;  position: absolute;border-top:1rpx solid lightgray;border-bottom:1rpx solid lightgray;">
+      </view>
+    </view>
+
+
+<!--课表-->
+<view wx:for="{{wlist}}">
+      <view class="flex-item kcb-item" bindtap="getDetail" id='0' data-statu="open" data-index="{{index}}" style="margin-left:{{(item.xqj-1)*94}}rpx;margin-top:{{(item.sksj-1)*102}}rpx;height:{{item.skcd*100-5}}rpx;background-color:{{item.color_list == 1 ? 'green' : 'coral'}}" data-user_id="{{item.user_id}}" data-shijianchuo1="{{item.shijianchuo1}}" data-shijianchuo2="{{item.shijianchuo2}}" data-isBenren="{{item.color_list}}">
+      <!-- xqj代表星期几上课，sksj是上课时间，skcd上课长度，kcxx课程信息 -->
+        <view class="smalltext">{{item.kcxx}}</view>
+      </view>
+    </view>
+
+
+  </view>
+</scroll-view>

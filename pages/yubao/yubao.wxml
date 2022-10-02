@@ -1,0 +1,25 @@
+<view class="yubao">
+  <view class="yubao1">天气预报</view>
+</view>
+<view wx:for="{{yuBao}}" wx:key="index" class="yubao3">
+  <view class="fenge">---------------------------------------</view>
+  <view class="xianshi">
+    <view>日期：{{item.date}}</view>
+  </view>
+  <view class="xianshi">
+    <view>星期：{{item.week}}</view>
+  </view>
+  <view class="xianshi">
+    <view>白天天气：{{item.dayweather}}</view>
+  </view>
+  <view class="xianshi">
+    <view>晚上天气：{{item.nightweather}}</view>
+  </view>
+  <view class="xianshi">
+    <view>温度：{{item.nighttemp}} / {{item.daytemp}} </view>
+  </view>
+  <view class="xianshi">
+    <view>风向：{{item.daywind}}</view>
+  </view>
+  <view class="fenge">---------------------------------------</view>
+</view>

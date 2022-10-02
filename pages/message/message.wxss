@@ -1,0 +1,74 @@
+.container{
+  width: 750rpx;
+  height: 1334rpx;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: list-item;
+}
+
+/* Page{
+  background-image: url(https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%B0%B4%E6%9E%9C%E5%9B%BE%E7%89%87/4610b912c8fcc3ce5efa48bf9017a18fd53f20d9.jpg?sign=0b56e1fc8bc6ee4760732cd91e22245e&t=1647516966);
+  background-size: cover;
+  position: absolute;
+} */
+
+view{
+  height: 60rpx;
+  width: 93%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: 4rpx solid gray;
+  margin: 10rpx;
+}
+
+/* .yemian2-1{
+  background-color: rgb(9, 255, 0);
+  color: rgb(0, 0, 0);
+  margin-bottom: 40rpx;
+  padding: 10rpx;
+  margin-top: 40rpx;
+  box-shadow: 0 0 20rpx rgba(252, 84, 32, 0.932);
+  border-radius: 30rpx;
+  width: 93%;
+}
+.yemian2-2{
+  background-color: rgb(163, 65, 0);
+  color: rgb(255, 255, 255);
+  margin-bottom: 40rpx;
+  padding: 10rpx;
+  margin-top: 40rpx;
+  box-shadow: 0 0 20rpx rgba(38, 255, 10, 0.932);
+  border-radius: 30rpx;
+  width: 93%;
+}
+.yemian2-3{
+  background-color: rgb(85, 201, 255);
+  color: rgb(0, 0, 0);
+  margin-bottom: 40rpx;
+  padding: 10rpx;
+  margin-top: 40rpx;
+  box-shadow: 0 0 20rpx rgba(252, 32, 32, 0.932);
+  border-radius: 30rpx;
+  width: 93%;
+}
+.yemian2-4{
+  background-color: rgb(233, 77, 4);
+  color: rgb(255, 255, 255);
+  margin-bottom: 40rpx;
+  padding: 10rpx;
+  margin-top: 40rpx;
+  box-shadow: 0 0 20rpx rgba(90, 222, 255, 0.932);
+  border-radius: 30rpx;
+  width: 93%;
+}
+.yemian2-5{
+  background-color: rgb(7, 255, 119);
+  color: rgb(0, 0, 0);
+  margin-bottom: 40rpx;
+  padding: 10rpx;
+  margin-top: 40rpx;
+  box-shadow: 0 0 20rpx rgba(252, 84, 32, 0.932);
+  border-radius: 30rpx;
+  width: 93%;
+} */

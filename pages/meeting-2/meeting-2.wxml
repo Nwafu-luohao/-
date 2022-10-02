@@ -1,0 +1,45 @@
+<view class="da_view">
+  <image src="{{detail.meeting_img}}" class="image"></image>
+</view>
+
+<view class="da_view">
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th2">会议信息</view>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">会议室名:</view>
+      <view class="td2">{{detail.name}}</view>
+    </view>
+
+    <view class="td0">
+      <view class="td0_2">预约者：</view>
+      <view class="td2">{{User_name}}</view>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">开始时间：</view>
+      <view class="td2">{{time11}}</view>
+    </view>
+
+    <view class="td0">
+      <view class="td0_2">结束时间：</view>
+      <view class="td2">{{time22}}</view>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">地址：</view>
+      <view class="td2">{{detail.address}}</view>
+    </view>
+
+  </view>
+  <view wx:if="{{isbenren}}">
+    <button class="btn1" type="primary" bindtap="xiugaiyuyue" data-_id="{{detail._id}}" data-shijianchuo1="{{shijianchuo1}}" data-shijianchuo2="{{shijianchuo2}}">修改预约</button>
+    <button  type="warn" bindtap="shanchuyuyue" data-_id="{{detail._id}}" data-shijianchuo1="{{shijianchuo1}}" data-shijianchuo2="{{shijianchuo2}}">删除预约</button>
+  </view>
+  <view class="mouwei_view"></view>
+</view>

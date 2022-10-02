@@ -1,0 +1,66 @@
+@import "../../lib/weui.wxss";
+
+Page{
+  background-color:rgb(85, 85, 85);
+}
+
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+    font: 1.1em sans-serif;
+    font-weight: 400;
+}
+
+.name{
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 20rpx;
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+.address{
+  text-align: center;
+}
+
+
+
+.q_time{
+  font-size:1.5em;
+  margin: 40rpx;
+  color: rgb(42, 211, 0);
+font-weight: 600;
+}
+
+.picker{
+  border: 4rpx solid black;
+  margin: 20rpx;
+}
+
+.q_time-1{
+  padding: 10rpx;
+  margin: 40rpx;
+  border: 10rpx solid rgb(128, 158, 240);
+}
+
+.z_time-1{
+  padding: 10rpx;
+  margin: 40rpx;
+  border: 10rpx solid rgb(128, 158, 240);
+}
+
+.button1{
+  margin-bottom: 60rpx;
+}
+
+.image{
+  margin-top: 13rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.zhuangtai{
+  color: darkblue;
+  font: 1.25em sans-serif;
+}
+

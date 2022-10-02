@@ -1,0 +1,35 @@
+<view class='headView'>
+    <view class="container">
+    <view class="userinfo">
+      <block wx:if="{{!hasUserInfo}}">
+        <view class='headImageView'>
+            <image class='headImage' src='https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%B0%B4%E6%9E%9C%E5%9B%BE%E7%89%87/%E9%BB%98%E8%AE%A4%E5%A4%B4%E5%83%8F.png?sign=9619f16943029ab4ea75868b5c2c14a6&t=1648449166' mode='scaleToFill'></image>
+        </view>
+            <view class='titleText'>申请获取以下权限</view>
+            <view class='contentText'>获得你的公开信息(昵称,头像,手机等)</view>
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" type="primary" class="buttons1"> 获取头像昵称 </button>
+        <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      </block>
+      <block wx:else>
+        <image class='headImage2' src="{{userInfo.avatarUrl}}" mode='scaleToFill'></image>
+        <rich-text nodes="<h4 color = 'rad'>用户名（已获取）：</h4>"></rich-text>
+        <view class="inputNull">{{userInfo.nickName}}</view>
+        <rich-text nodes="<h4 color = 'rad'>输入姓名：</h4>"></rich-text>
+        <input type="text" class="input" bindinput="getName" />
+        <rich-text nodes="<h4 color = 'rad'>输入手机号（账号）：</h4>"></rich-text>
+        <input type="text" class="input" bindinput="getZhanghao" />
+        <rich-text nodes="<h4 color = 'rad'>输入您的密码：</h4>"></rich-text>
+        <input type="text" class="input" bindinput="getMima" />
+        <rich-text nodes="<h4 color = 'rad'>输入您的学号(职工号)：</h4>"></rich-text>
+        <input type="text" class="input" bindinput="getxuehao" />
+        <rich-text nodes="<h4 color = 'rad'>输入您的学院：</h4>"></rich-text>
+        <input type="text" class="input" bindinput="getcollege" />
+        <rich-text nodes="<h4 color = 'rad'>输入您的专业：</h4>"></rich-text>
+        <input type="text" class="input" bindinput="getzhuanye" />
+        <rich-text nodes="<h4 color = 'rad'>输入您的班级：</h4>"></rich-text>
+        <input type="text" class="input" bindinput="getbanji" />
+        <button bindtap="zhuCe" type="primary" class="buttons2">提交审核</button>
+      </block>
+    </view>
+  </view>
+</view>

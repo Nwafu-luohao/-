@@ -1,0 +1,31 @@
+<view wx:if="{{!shenhe}}">
+  <view>
+    <image src="https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E5%85%B6%E4%BB%96%E5%9B%BE%E7%89%87/shenhe.png?sign=99420b67a8a7f9d9ba6e931337dbcab1&t=1650441093" style="width: 500rpx; height: 500rpx; margin-left: 100rpx;"></image>
+  </view>
+  <view style="text-align: center; font-size: 1.4em; ">您的真实身份资料已经提交</view>
+  <view style="text-align: center; color: rgb(131, 131, 131); ">正在审核中...</view>
+
+  <button class="btn" bindtap="fanhui">我知道了</button>
+
+</view>
+
+<view wx:else>
+  <view wx:if="{{pass_shenhe}}" class="view1">
+    <view class="view1-1">
+      <image src="https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E5%85%B6%E4%BB%96%E5%9B%BE%E7%89%87/%E9%80%9A%E8%BF%87%E5%AE%A1%E6%A0%B8.png?sign=97d50eacd4bf5e9c650ff67ae39eae9b&t=1650889198" style="width: 250rpx; height: 250rpx; margin-left: 175rpx; margin-top: 30rpx;"></image>
+      <view class="tongguo">审核成功</view>
+    </view>
+    <view class="view1-2">您已经通过了管理员的审核，点击进入登录页面。</view>
+    <button class="btn1" bindtap="kaishidenglu">开始登录</button>
+  </view>
+
+
+  <view wx:else class="view1">
+    <view class="view1-1">
+      <image src="https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E5%85%B6%E4%BB%96%E5%9B%BE%E7%89%87/%E6%9C%AA%E9%80%9A%E8%BF%87.png?sign=6b48b3efc254ca8ee447925309a7b38d&t=1650888565" style="width: 250rpx; height: 250rpx; margin-left: 175rpx; margin-top: 30rpx;"></image>
+      <view class="butongguo">审核失败</view>
+    </view>
+    <view class="view1-2">您输入的账号，姓名等关键信息不完整或不正确故审核失败，请重新认证。</view>
+    <button class="btn2" bindtap="chongxinrenzheng">重新认证</button>
+  </view>
+</view>

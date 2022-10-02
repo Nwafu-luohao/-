@@ -1,0 +1,40 @@
+<view class="container">
+ <view>
+  <swiper indicator-dots circular autoplay interval="2500">
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+      <image src="{{item.image}}"></image>
+    </swiper-item>
+  </swiper>
+ </view>
+
+
+
+ <view wx:for="{{meeting}}" wx:key="index" class="meeting" style="background-color:rgb(82, 87, 82) ;">
+  <view wx:if="{{!item.isyuyue}}" class="zhuangtai2" >
+    <view bindtap="getDetail" data-_id="{{item._id}}" data-zhuangtai="{{item.zhuangtai}}" data-jvli="{{item.jvli}}" style="display: flex;">
+      <view class="view_img">
+        <image src="{{item.meeting_img}}" class="meeting_img" mode='widthFix'></image>
+      </view>
+      <view style="margin-left: 30rpx;">
+        <view style="color: aliceblue; margin-left: 100rpx; font-size: large; font-weight: 700;">{{item.name}}</view>
+        <view style="margin-bottom: 20rpx; color: white; display: flex;">
+        <view>
+        <image src="https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E5%85%B6%E4%BB%96%E5%9B%BE%E6%A0%87/%E9%A2%84%E7%BA%A6%E7%8A%B6%E6%80%81.png?sign=da8e017f422996a3c83359432798c2de&t=1649296586" mode='widthFix' style="width: 50rpx;"></image>
+        </view>
+        <view style="margin-left: 10rpx;">状态：</view>
+        <view wx:if="{{item.zhuangtai}}" style="color: rgb(252, 195, 73);" >进行中</view>
+        <view wx:else style="color: rgb(47, 243, 47);" >空闲</view>
+        </view>
+        <view style="margin-bottom: 20rpx; color: white; display: flex;">
+          <view>
+        <image src="https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E5%85%B6%E4%BB%96%E5%9B%BE%E6%A0%87/%E8%B7%9D%E7%A6%BB%E8%B7%AF%E5%BE%84.png?sign=d22378d97da403cd61164924b5bc15ba&t=1649296610" mode='widthFix' style="width: 50rpx;"></image>
+        </view>
+        <view style="margin-left: 10rpx;">距离：</view>
+        <view style="color: rgb(110, 233, 255);">{{item.jvli}}米</view>
+        </view>
+        <view style="color: wheat; font-size: small;">地址：{{item.address}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

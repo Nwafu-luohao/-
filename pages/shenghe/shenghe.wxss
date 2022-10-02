@@ -1,0 +1,65 @@
+
+.view1{
+  display: flex;
+  flex-direction: column;
+}
+
+.view1-1{
+  margin-top: 40rpx;
+  margin-left: 10%;
+  width: 80%;
+  border: 6rpx solid gray;
+  border-radius: 30rpx;
+  box-shadow: 10rpx 10rpx 10rpx rgb(138, 138, 138);
+}
+
+.tongguo{
+  font: 1.5em sans-serif;
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(7, 114, 7);
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.butongguo{
+  font: 1.5em sans-serif;
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(104, 104, 104);
+  margin-bottom: 30rpx;
+}
+
+.btn:not([size="mini"]){
+  background: linear-gradient(to right,#72B2F8, #6E51EB); 
+  color: rgb(252, 252, 252);
+  font-weight: 500;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+}
+
+.view1-2{
+  margin-left: 10%;
+  margin-top: 70rpx;
+  color: gray;
+  width: 80%;
+  text-align: center;
+}
+
+.btn2:not([size="mini"]){
+  background: linear-gradient(to right,#71aef0, #25ec50); 
+  color: rgb(252, 252, 252);
+  font-weight: 600;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+}
+
+.btn1:not([size="mini"]){
+  background: linear-gradient(to right,#81b6f0, #6b48e9); 
+  color: rgb(252, 252, 252);
+  font-weight: 600;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+}

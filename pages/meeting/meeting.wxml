@@ -1,0 +1,33 @@
+<view wx:for="{{meeting}}" wx:key="index" class="meeting">
+  <view wx:if="{{!item.isyuyue}}" class="zhuangtai2">
+    <view bindtap="getDetail" data-_id="{{item._id}}">
+      <view class="zhuangtai1">会议室：{{item.name}}</view>
+      <view class="dizhi">会议室地址：{{item.address}}</view>
+      <view class="zhuangtai">会议室状态：</view>
+      <view class="pingjun">
+        <view class="zhongjiande">
+          <image src="/images/kongxian.png" class="image"></image>
+        </view>
+        <view class="zhongjiande">
+          <view class="image1">空闲</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class="zhuangtai2">
+    <view  bindtap="getDetail2" data-_id="{{item._id}}"  data-time1="{{item.q_time}}" data-time2="{{item.z_time}}">
+      <view class="zhuangtai1">会议室：{{item.name}}</view>
+      <view class="dizhi">会议室地址：{{item.address}}</view>
+      <view class="zhuangtai">会议室状态：</view>
+      <view class="pingjun">
+        <view class="zhongjiande">
+          <image src="/images/manglu.png" class="image"></image>
+        </view>
+        <view class="zhongjiande">
+          <view class="image2">被预约</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

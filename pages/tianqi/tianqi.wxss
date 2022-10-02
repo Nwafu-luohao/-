@@ -1,0 +1,25 @@
+/* pages/tianqi/tianqi.wxss */
+page{
+  background-image: url(https://tse1-mm.cn.bing.net/th/id/R-C.02137d18341a464a81c46fc71e79a03f?rik=QsLJ7sayaM7HKA&riu=http%3a%2f%2fn.sinaimg.cn%2fsinacn20117%2f609%2fw1080h1929%2f20190925%2f44db-ifaench1659607.jpg&ehk=D9LsxYw2mpdcQANW8TvH9P%2byp8Cl4mkSxqpzTj%2b%2bs7o%3d&risl=&pid=ImgRaw&r=0);
+  background-size: cover;
+  position: absolute;
+}
+
+.button1{
+  color: aliceblue;
+  background-color: transparent;
+  margin: 60rpx;
+  border:5rpx solid antiquewhite;
+}
+
+
+.dangtianqi1{
+  color: antiquewhite;
+  font-size: 1.05em;
+  margin: 15rpx;
+  font-weight: 600;
+}
+
+.view1{
+  border: 7rpx solid antiquewhite;
+}

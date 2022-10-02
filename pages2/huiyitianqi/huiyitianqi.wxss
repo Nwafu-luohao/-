@@ -1,0 +1,18 @@
+page{
+  background-image: url(https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%B0%B4%E6%9E%9C%E5%9B%BE%E7%89%87/20191124130829_fdggm.jpg?sign=11b817a3b9936e529ac36fe4ff473717&t=1647516174);
+  background-size: cover;
+  position: absolute;
+}
+
+.dangtianqi1{
+  font-size: 1.25em;
+  margin: 15rpx;
+  font-weight: 600;
+}
+
+.view1{
+  border: 8rpx solid black;
+  margin-top: 200rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}

@@ -1,0 +1,5 @@
+<rich-text nodes="<h4 color = 'rad'>输入账号（手机号）：</h4>"></rich-text>
+<input type="text" bindinput="getZhanghao" class="input"/>
+<rich-text nodes="<h4 color = 'rad'>输入密码：</h4>"></rich-text>
+<input type="text"  class="input"/>
+<button class="denglu" type="primary" bindtap="login">登录</button>

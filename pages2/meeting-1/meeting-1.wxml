@@ -1,0 +1,60 @@
+<view class="da_view">
+  <image src="{{detail.meeting_img}}" class="image"></image>
+</view>
+
+<view class="da_view">
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th2">会议室详情</view>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">会议室名:</view>
+      <view class="td2">{{detail.name}}</view>
+    </view>
+
+    <view class="td0">
+      <view class="td0_2">预约状态：</view>
+      <view wx:if="{{zhuangtai}}" style="display: flex;">
+        <view>
+          <image src="/images/manglu.png" mode='widthFix' style="width: 50rpx;"></image>
+        </view>
+        <view style="color: rgb(252, 195, 73); margin-left: 30rpx; align-items: center;">进行中</view>
+      </view>
+      <view wx:else style="display: flex;">
+        <view>
+          <image src="/images/kongxian.png" mode='widthFix' style="width: 50rpx;"></image>
+        </view>
+        <view style="color: rgb(47, 243, 47); margin-left: 30rpx; align-items: center;">空闲</view>
+      </view>
+      <!-- <view class="td2">{{detail.addressNumber}}</view> -->
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">距离：</view>
+      <view class="td2" style="color:  rgb(110, 233, 255);;">{{jvli}}米</view>
+    </view>
+
+    <view class="td0">
+      <view class="td0_2">管理员电话：</view>
+      <view class="td2">{{detail.phoneNumber}}</view>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">地址：</view>
+      <view class="td2">{{detail.address}}</view>
+    </view>
+
+
+    <view class="td0 td0_2_xiugai1" bindtap="chakantianqiqingkuang" data-num="{{detail.addressNumber}}">
+      <view class="td0_2_xiugai">查看天气情况</view>
+    </view>
+
+  </view>
+  <button class="btn2" type="primary" bindtap="xiugaiyuyuexinxi" data-_id="{{detail._id}}">预约会议室</button>
+  <button class="btn1" type="primary" bindtap="shoucanghuiyishi" data-_id="{{detail._id}}">收藏会议室</button>
+  <view class="mouwei_view"></view>
+</view>

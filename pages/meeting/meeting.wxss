@@ -1,0 +1,55 @@
+
+
+.meeting{
+  border: 30rpx solid green;
+  background-image: url(https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%B0%B4%E6%9E%9C%E5%9B%BE%E7%89%87/27.jpg?sign=1363f8dfe2f0dbe47d0048aba305755f&t=1647569932);
+  background-size: cover;
+}
+
+.zhuangtai{
+  font-size: larger;
+  font-weight: 600;
+  margin-top: 80rpx;
+  margin-bottom: 20rpx;
+}
+
+.zhuangtai1{
+  font-size: larger;
+  font-weight: 800;
+  margin-bottom: 20rpx;
+  text-align: center;
+  border: 10rpx solid rgb(125, 251, 255);
+  padding: 10rpx;
+  width: 100%;
+}
+
+.image{
+width: 100rpx;
+height: 100rpx;
+align-self: center;
+margin-left: 150rpx;
+}
+
+.image1{
+width: 50%;
+color: rgb(30, 255, 0);
+  font: 1.5em sans-serif;
+  text-align: center;
+}
+
+.image2{
+  width: 50%;
+  color: rgb(255, 187, 0);
+  font: 1.5em sans-serif;
+  text-align: center;
+  }
+.zhuangtai2{
+  display: flex;
+}
+.zhongjiande{
+  width: 50%;
+}
+
+.pingjun{
+  display: flex;
+}

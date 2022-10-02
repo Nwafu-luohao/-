@@ -1,0 +1,8 @@
+<view class="container">
+  <view bindtap="getMeeting" class="yemian2-1">预约会议室</view>
+<view class="yemian2-2">上传资料</view>
+<view class="yemian2-3" bindtap="yaoqingyrenyuan">邀请人员</view>
+<view class="yemian2-4" bindtap="quxiaoyuyue">取消预约</view>
+<view class="yemian2-5" bindtap="xiugaiyuyue">更改预约</view>
+
+</view>

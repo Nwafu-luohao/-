@@ -1,0 +1,91 @@
+/* Page{
+  background-image: url(https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%B0%B4%E6%9E%9C%E5%9B%BE%E7%89%87/zhuce.jpg?sign=254379a6edd800bce7f2a012569bd591&t=1647529154);
+  background-size: cover;
+  position: absolute;
+} */
+.container{
+  padding: 0%;
+}
+.input{
+  border: 4rpx solid gray;
+  margin: 20rpx;
+  font: 1.2em sans-serif;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.inputNull{
+  border: 4rpx solid gray;
+  margin: 20rpx;
+  font: 1.2em sans-serif;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+padding: 20rpx;
+background-color: white;
+}
+
+rich-text{
+  display: flex;
+  margin-left: 30rpx;
+  margin-top: 18rpx;
+}
+
+.headImageView {
+  display: block;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  height: 50px;
+}
+
+.headImage {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-left: 45%;
+}
+
+.titleText {
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #020e0f;
+  text-align: center;
+}
+
+.contentText {
+  margin-left: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.authBtn {
+  margin-top: 35px;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 45px;
+  font-size: 17.5px;
+}
+
+.headImage2 {
+
+  display: flex;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 20rpx rgba(252, 84, 32, 0.932);
+  margin-left: 40%; 
+  border-radius: 20%;
+}
+
+.buttons1{
+  margin: 80rpx;
+}
+
+.buttons2{
+  margin: 40rpx;
+}

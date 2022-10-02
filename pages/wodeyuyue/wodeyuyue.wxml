@@ -1,0 +1,44 @@
+<view wx:if="{{isxianshi == 1}}">
+  <view wx:for="{{yuYuelan_1}}" wx:key="index" class="item" style="background-color: {{(index%2)==0? '#93F4AC':'#CACACA'}};"  >
+    <view>
+      <view style="display: flex; margin-left: 40rpx;">
+      <view>
+        <image src="{{item.image}}" mode='widthFix' style="width: 140rpx;"></image>
+      </view>
+      <view>
+        <view style="text-align: center;font-size: 1.5em; font-weight: 600; color: rgb(0, 0, 0);">{{item.name}}</view>
+        <view style="display: flex;">
+          <view style="margin-left: 100rpx; font-weight: 600; color: rgb(31, 68, 180);">预约情况：</view>
+          <view >
+            <view wx:if="{{item.zhuangtai}}" style="display: flex;">
+              <image src="/images/shibai.png" style="width: 50rpx; height: 50rpx; "></image>
+              <view style="color: red; margin-left: 30rpx;" >已过期</view>
+            </view>
+            <view wx:else style="display: flex;">
+              <image src="/images/shibai-1.png" style="width: 50rpx; height: 50rpx;"></image>
+              <view style="color: rgb(0, 224, 30); margin-left: 30rpx;">已预约</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+      <view style="margin-left: 40rpx; margin-top: 10rpx; display: flex;">
+      <image src="/images/end.png" style="width: 50rpx; height: 50rpx;  margin-right: 20rpx;"></image>
+      <view style="font-size: smaller;">开始时间：{{item.time1}}</view>
+      </view>
+    <view style="margin-left: 40rpx;  margin-bottom: 10rpx; display: flex; ">
+      <image src="/images/start.png" style="width: 50rpx; height: 50rpx;  margin-right: 20rpx;"></image>
+      <view style="font-size: smaller;">结束时间：{{item.time2}}</view>
+    </view>
+    <view style="display: flex;">
+    <image src="/images/address.png"  style="margin-left: 40rpx; width: 50rpx; height: 50rpx;"></image>
+      <view style=" font-size: small; color: rgb(71, 48, 3);">地址：{{item.address}}</view>
+    </view>
+    <button wx:if="{{item.zhuangtai}}"  class="btn1" style="float: right; margin-right: 40rpx; "  bindtap="tiaozhuandaobiaoge" data-_id="{{item._id}}" >预约会议</button>
+    <button wx:else class="btn2" style="float: right; margin-right: 40rpx; "  bindtap="tiaozhuandaobiaoge" data-_id="{{item._id}}" >修改预约</button>
+    </view>
+  </view>
+</view>
+<view wx:if="{{isxianshi == -1}}" class="no_list">
+  <view style="padding: 100rpx; font-size: 1.5em; font-weight: 400; color: red;">您还没有预约过会议室</view>
+</view>

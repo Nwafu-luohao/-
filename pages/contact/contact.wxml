@@ -1,0 +1,139 @@
+<view class="xuhua">
+  <view class="flex-container" bindtap="geRenxinxi">
+    <view class="UserHeadImage">
+      <image src="{{detail.tou_image}}"></image>
+    </view>
+    <view class="UserName">
+
+
+      <view>
+        <view wx:if="{{!isGuanli}}" class="user-name" catchtap="changeMoney">
+          <view>{{detail.name}}</view>
+          <image src="{{quanxian_img_1}}" class="quanxian_img"></image>
+        </view>
+        <view wx:else class="user-name" catchtap="changeMoney">
+          <view>{{detail.name}}</view>
+          <image src="{{quanxian_img_2}}" class="quanxian_img"></image>
+        </view>
+      </view>
+
+
+      <view class="PersonalitySignature">{{detail.college+" "+detail.zhuanye+" "+detail.class}}</view>
+    </view>
+    <!-- <view class="money">{{detail.xueHao}}</view> -->
+  </view>
+
+  <view class="view_fengexian">
+    <view></view>
+    <text class="text_fengexian">*预约信息*</text>
+    <view></view>
+  </view>
+
+
+  <view class="Order">
+    <view class="MyOder">我的预约</view>
+    <view class="AllofOrder" bindtap="yuyuezonglan">预约总览</view>
+  </view>
+
+
+  <view wx:if="{{!isHave}}" style="justify-content: center; text-align: center; color: rgb(255, 255, 255);">
+  没有预约的会议室
+  </view>
+  <view class="page-section" wx:else>
+    <view class="page-section-spacing">
+      <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+        <view wx:for="{{yuYuelan_1}}" id="index" wx:key="index" class="scroll-view-item_H demo-text-1" bindtap="tiaozhuandaobiaoge" data-_id="{{item._id}}">
+          <image class="UserHeadImage3" src="{{item.image}}"></image>
+          <view wx:if="{{!item.zhuangtai}}" class="guoqi">已预约</view>
+          <view wx:else="" class="guoqi" style="color: #cf9625;">进行中</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+
+
+  <view class="view_fengexian">
+    <view></view>
+    <text class="text_fengexian">*其他操作*</text>
+    <view></view>
+  </view>
+
+
+  <view wx:if="{{!isGuanli}}">
+    <view class="view" style="margin-top: 30rpx;">
+    
+
+      <view class="view1"  bindtap="wodeyuyue">
+        <image src="/images/g3.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="">我的预约记录</view>
+      </view>
+      <view class="view1"  bindtap="tianqi">
+        <image src="/images/g4.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="">了解天气情况</view>
+      </view>
+      <view class="view1" bindtap="wodeshoucang">
+        <image src="/images/g6.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="" >我的收藏</view>
+      </view>
+    </view>
+    <view class="view" style="margin-top: 30rpx;">
+    
+      <view class="view1" bindtap="tousujianyi">
+        <image src="/images/g7.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="" >投诉建议</view>
+      </view>
+      <view class="view1"  bindtap="lianxiguanliyuan">
+        <image src="/images/g9.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="">联系管理员</view>
+      </view>
+  </view>
+    <view class="view" style="margin-top: 30rpx; margin-bottom: 60rpx;">
+      <view class="view1" bindtap="tuichu">
+        <image src="/images/g8.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view  class="" >退出系统</view>
+      </view>
+  </view>
+  </view>
+  <view wx:else>
+    <view class="view" style="margin-top: 30rpx;">
+      <view class="view1" bindtap="yonghushenghe">
+        <image src="/images/g1.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="" >新用户审核</view>
+      </view>
+      <view class="view1" bindtap="yonghuguanli">
+        <image src="/images/g2.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="" >用户管理</view>
+      </view>
+      <view class="view1" bindtap="huiyishiguanli">
+        <image src="/images/g3.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="" >会议室管理</view>
+      </view>
+    </view>
+    <view class="view" style="margin-top: 30rpx;">
+      <view class="view1" bindtap="tianqi">
+        <image src="/images/g4.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="" >了解天气情况</view>
+      </view>
+      <view class="view1" bindtap="wodeyuyue">
+        <image src="/images/g5.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="" >我的预约记录</view>
+      </view>
+      <view class="view1"  bindtap="wodeshoucang">
+        <image src="/images/g6.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="">我的收藏</view>
+      </view>
+    </view>
+    <view class="view" style="margin-top: 30rpx; margin-bottom: 40rpx;">
+
+      <view class="view1" bindtap="chakantousu">
+        <image src="/images/g7.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view class="" >查看投诉建议</view>
+      </view>
+      <view class="view1" bindtap="tuichu">
+        <image src="/images/g8.png" style="height: 50rpx; width: 50rpx; margin-right: 15rpx;"></image>
+        <view  class="">退出系统</view>
+      </view>
+    </view>
+  </view>
+</view>

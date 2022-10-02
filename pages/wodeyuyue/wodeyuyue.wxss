@@ -1,0 +1,38 @@
+Page{
+  background-color: #CACACA;
+}
+.no_list{
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-top: 30%;
+  width: 70%;
+  height: 300rpx;
+  box-shadow: 10rpx 10rpx;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 6rpx rgb(0, 0, 0);
+}
+
+.btn1:not([size="mini"]){
+  background-color: rgb(75, 59, 56);
+  color: rgb(4, 190, 14);
+  font-weight: 600;
+  width: 240rpx;
+  height: 70rpx;
+}
+
+.btn2:not([size="mini"]){
+  background-color: rgb(0, 141, 24);
+  color: rgb(252, 252, 252);
+  font-weight: 400;
+  width: 240rpx;
+  height: 70rpx;
+}

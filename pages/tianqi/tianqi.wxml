@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="tianqi" wx:if="{{!xianshi}}">
+    <button bindtap="gettianQi1" class="button1">获取地理位置</button>
+    <button bindtap="bianMa2" class="button1">了解天气情况</button>
+  </view>
+
+  <view wx:if="{{xianshi}}">
+    <button bindtap="liaojiegengduo" class="button1">了解更多</button>
+    <view class="view1">
+      <view class="dangtianqi1">天气现象：{{dangTian.weather}}</view>
+      <view class="dangtianqi1">实时气温：{{dangTian.temperature}} °C</view>
+      <view class="dangtianqi1">空气湿度：{{dangTian.humidity}}</view>
+      <view class="dangtianqi1">数据发布时间：{{dangTian.reporttime}}</view>
+    </view>
+  </view>
+</view>

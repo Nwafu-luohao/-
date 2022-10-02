@@ -1,0 +1,44 @@
+<view >
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th2">修改会议室信息</view>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">会议室名:</view>
+      <input type="text" value="{{detail.name}}" class="td0_2_put" bindinput="getname"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">管理员电话：</view>
+      <input type="text" value="{{detail.phoneNumber}}" class="td0_2_put" bindinput="getphoneNumber"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">地址编号：</view>
+      <input type="text" value="{{detail.addressNumber}}" class="td0_2_put" bindinput="getaddressNumber"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">经度：</view>
+      <input type="text" value="{{detail.Jingwei}}" class="td0_2_put" bindinput="getJingwei"/>
+    </view>
+
+    <view class="td0">
+      <view class="td0_2">纬度：</view>
+      <input type="text" value="{{detail.Jingwei2}}" class="td0_2_put" bindinput="getJingwei2"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">地址：</view>
+      <input type="text" value="{{detail.address}}" class="td0_2_put" bindinput="getaddress"/>
+    </view>
+  </view>
+  <button class="btn1" type="default" bindtap="huoqubianhaohejingweidu">获取地址编号和经纬度</button>
+  <button class="btn1" type="primary" bindtap="baocunxiugai">保存修改</button>
+</view>

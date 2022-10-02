@@ -1,0 +1,18 @@
+Page{
+  background-image: url(https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%B0%B4%E6%9E%9C%E5%9B%BE%E7%89%87/3.jpg?sign=fd8834ad3747d4ab4a9f0c14ed4b56fe&t=1647943804);
+  background-size: cover;
+  position: absolute;
+}
+
+.view1{
+  margin: 40rpx;
+  font-size: 1.7em;
+}
+
+.view2{
+  color: red;
+}
+
+.view3{
+  color: green;
+}

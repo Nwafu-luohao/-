@@ -1,0 +1,22 @@
+/* Page{
+  background-image: url(https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%B0%B4%E6%9E%9C%E5%9B%BE%E7%89%87/denglu.jpg?sign=dca103f91e9f5f2d3f9beee43aad81ec&t=1647538354);
+  background-size: cover;
+  position: absolute;
+} */
+
+.input{
+  border: 4rpx solid gray;
+  margin: 4rpx;
+  font: 1.2em sans-serif;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+rich-text{
+  display: flex;
+  margin: 18rpx;
+}
+
+.denglu{
+  margin: 40rpx;
+}

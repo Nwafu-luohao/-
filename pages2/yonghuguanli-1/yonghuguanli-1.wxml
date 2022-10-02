@@ -1,0 +1,75 @@
+<view >
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th2">修改用户信息</view>
+    </view>
+
+    <view class="td0">
+      <view class="td0_2">头像*:</view>
+      <view class="td2">
+        <image src="{{detail.tou_image}}" class="image"></image>
+      </view>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">用户名:</view>
+      <input type="text" value="{{detail.name}}" class="td0_2_put" bindinput="getname"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">账号：</view>
+      <input type="text" value="{{detail.zhanghao}}" class="td0_2_put" bindinput="getzhanghao"/>
+    </view>
+
+    <view class="td0">
+      <view class="td0_2">账号：</view>
+      <input type="text" value="{{detail.mima}}" class="td0_2_put" bindinput="getmima"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">姓名：</view>
+      <input type="text" value="{{detail.name_main}}" class="td0_2_put" bindinput="getname_main"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">学号：</view>
+      <input type="text" value="{{detail.xueHao}}" class="td0_2_put" bindinput="getxueHao"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">学院：</view>
+      <input type="text" value="{{detail.college}}" class="td0_2_put" bindinput="getcollege"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">专业：</view>
+      <input type="text" value="{{detail.zhuanye}}" class="td0_2_put" bindinput="getzhuanye"/>
+    </view>
+
+
+    <view class="td0">
+      <view class="td0_2">班级：</view>
+      <input type="text" value="{{detail.class}}" class="td0_2_put" bindinput="getclass"/>
+    </view>
+
+    <view wx:if="{{!isGuanli}}" class="td0">
+      <view class="td0_21">权限管理：</view>
+      <view class="td21 td0_2_put" bindtap="xiugaiquanxian">
+        <image src="https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%9D%83%E9%99%90%E5%9B%BE%E6%A0%87/%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B72.png?sign=2cb6ced2d3e2745949b1e69993f97a23&t=1648536018" class="td2_image"></image>
+      </view>
+    </view>
+    <view wx:else class="td0">
+      <view class="td0_21">权限管理：</view>
+      <view class="td21 td0_2_put" bindtap="xiugaiquanxian">
+        <image src="https://7869-xiaochengxu-7g0sacbi501960c0-1309579270.tcb.qcloud.la/%E6%9D%83%E9%99%90%E5%9B%BE%E6%A0%87/Style1-%E7%AE%A1%E7%90%86%E5%91%98.png?sign=8b4499ff2f4e40be022893e869eed1d0&t=1648537028" class=" td2_image"></image>
+      </view>
+    </view>
+  </view>
+  <button class="btn1" type="primary" bindtap="baocunxiugai">保存修改</button>
+</view>

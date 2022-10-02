@@ -1,0 +1,81 @@
+Page{
+  background-color: #263C45;
+}
+
+.button{
+  margin: 20rpx;
+  padding: 6px;
+  flex-direction: column;
+}
+
+.happy view{
+  height: 50rpx;
+  width: 100%;
+  display: contents;
+  flex: content;
+  size: 6em;
+}
+
+.button1{
+  margin-top: 30rpx;
+}
+
+.button2{
+margin-top: 10rpx;
+}
+
+.shuru{
+  margin-top: 40rpx;
+  width: 80%;
+  margin-left: 10%;
+  border:4rpx solid  rgb(144, 211, 238);
+  border-radius: 20rpx;
+  height: 80rpx;
+}
+
+.shuru_image{
+  margin-right: 20rpx;
+}
+
+.shuru_input{
+  width: 480rpx;
+  margin-top: 6rpx;
+  padding: 13rpx;
+  background-color: rgba(34, 74, 134, 0.03);
+  border-left:3rpx solid white;
+  color: aliceblue;
+}
+
+.shuru_input .placeholder_class {
+  color: rgb(117, 117, 117);
+}
+
+.btn1:not([size="mini"]){
+  width: 30%;
+  background: rgb(131, 69, 69,0); 
+  border: 4rpx solid black;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+}
+
+.btn2:not([size="mini"]){
+  width: 30%;
+  background: rgb(131, 69, 69,0); 
+  border: 4rpx solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+}
+
+.btn3:not([size="mini"]){
+  width: 40%;
+  background: rgb(131, 69, 69,0); 
+  border: 4rpx solid rgb(21, 255, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+}

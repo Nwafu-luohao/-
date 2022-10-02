@@ -1,0 +1,8 @@
+<view wx:for="{{jindu}}" wx:key="index">
+<view class="view1">
+  <view>会议室总数：{{item.zongshu}}</view>
+  <view class="view2">被预约：{{item.yuyueshu}}</view>
+  <view class="view3">空闲：{{item.zongshu - item.yuyueshu}}</view>
+</view>
+  
+</view>

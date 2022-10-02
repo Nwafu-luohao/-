@@ -1,0 +1,9 @@
+<view >
+    <view class="view1">
+      <view class="dangtianqi1">天气现象：{{detail.weather}}</view>
+      <view class="dangtianqi1">实时气温：{{detail.temperature}} °C</view>
+      <view class="dangtianqi1">空气湿度：{{detail.humidity}}</view>
+      <view class="dangtianqi1">数据发布时间：{{detail.reporttime}}</view>
+    </view>
+  </view>
+  <view style="color: red; font-size: 1.5em; margin: 50rpx;">界面样式后续改进</view>

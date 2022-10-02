@@ -1,0 +1,26 @@
+<scroll-view class="scroll-box" scroll-x scroll-with-animation
+  scroll-into-view="{{toView}}"
+  bindtouchstart="touchStart"
+  bindtouchend="touchEnd">
+    <view wx:for="{{guanliyuan}}" wx:key="index" class="card-box" id="card_{{index}}">
+      <view class="card">
+        <image src="{{item.tou_image}}" style="width: 360rpx; height: 360rpx; margin: 0 auto; border-radius: 20% 20% 20% 20%; margin-top: 40rpx;"></image>
+        <view style="display: flex; margin-top: 100rpx; margin-left: 20rpx;">
+        <image src="/images/name.png" style="width: 50rpx; height: 50rpx;" ></image>
+        <view class="view1">姓名：</view>
+        <view class="view2">{{item.name_main}}</view>
+        </view>
+        <view style="display: flex; margin-top: 20rpx; margin-left: 20rpx;">
+        <image src="/images/phone.png" style="width: 50rpx; height: 50rpx;" ></image>
+        <view class="view1">电话：</view>
+        <view class="view2" style="font-size: 1.1em; color: red;">{{item.zhanghao}}</view>
+        </view>
+        <view style="display: flex; margin-top: 20rpx; margin-left: 20rpx;">
+        <image src="/images/college.png" style="width: 50rpx; height: 50rpx;"></image>
+        <view class="view1">学院：</view>
+        <view class="view2">{{item.college}}</view>
+        </view>
+        <button bindtap="tels" data-num="{{item.zhanghao}}" style="margin-top: 200rpx;" type="primary">拨打电话</button>
+      </view>
+    </view>
+</scroll-view>
